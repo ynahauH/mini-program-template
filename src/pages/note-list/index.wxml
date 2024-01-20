@@ -1,0 +1,8 @@
+<view class="contianer">
+    <view class="note-list">
+        <view class="note-preview-item" wx:for="{{noteList}}" data-note-id="{{item.noteId}}" wx:key="{{item.noteId}}" bindtap="onClickNote">
+            <text class="content">{{item.content.text}}</text>
+        </view>
+    </view>
+    <view class="add-bote-btn" bindtap="onCreateNote">+</view>
+</view>

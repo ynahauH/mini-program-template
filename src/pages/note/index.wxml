@@ -1,0 +1,13 @@
+<view class="contianer">
+    <view class="action-bar">
+        <view class="toolbars">
+            <view class="bold-style tool" bindtap="onClickBold">B</view>
+            <view class="italic-style tool" bindtap="onClickItalic">I</view>
+            <view class="underline-style tool" bindtap="onClickUnderLine">U</view>
+            <view class="h1-style tool" bindtap="onClickH1">h1</view>
+            <view class="h2-style tool" bindtap="onClickH2">h2</view>
+            <view class="h5-style tool" bindtap="onClickH5">h5</view>
+        </view>
+    </view>
+    <editor id="note-editor" class="edit" bindinput="onInput"></editor>
+</view>
