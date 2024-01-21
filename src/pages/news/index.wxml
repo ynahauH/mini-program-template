@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="news-tag-container">
+        <view class="tag-item {{ currentTag === item.key ? 'active-tag' : '' }}"
+              wx:for="{{ newsTag }}"
+              wx:key="{{ item.key }}"
+              bindtap="onclickNewsTag"
+              data-tag-key="{{ item.key }}">
+            {{ item.title }}
+        </view>
+        <view class="edit-btn"
+              bindtap="onclickEdit">编辑</view>
+    </view>
+    <!-- 滑动切换模块 -->
+    <swiper class="news-list-container"
+            bindchange="onSwiperChange"
+            current="{{currentIndex}}">
+        <swiper-item wx:for="{{ newsTag }}"
+                     class="news-list"
+                     wx:for-item="tagItem"
+                     wx:key="{{tagItem.key}}">
+            <view>{{tagItem.title}}</view>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,29 @@
+page {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    .news-tag-container {
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        .tag-item {
+            margin: 0 6rpx;
+            overflow-x: auto;
+        }
+        .active-tag {
+            color: red;
+        }
+        .edit-btn {
+            position: absolute;
+            right: 4rpx;
+            background-color: #e3e;
+        }
+    }
+    .news-list-container {
+        height: 100%;
+        padding-top: 60rpx;
+        box-sizing: border-box;
+    }
+}

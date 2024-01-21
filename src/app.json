@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/note/index",
     "pages/note-list/index",
-    "pages/news/index"
+    "pages/news/index",
+    "pages/news-detail/index",
+    "pages/tag-config/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

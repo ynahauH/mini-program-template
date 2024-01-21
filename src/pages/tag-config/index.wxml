@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="select-tags">
+        <view class="title">当前选中新闻分类</view>
+        <view class="tag-list">
+            <view class="tag-item"
+                  wx:for="{{selectedTagList}}"
+                  data-tag-index="{{index}}"
+                  wx:key="item.key"
+                  bindtap="onRemoveTag">
+                {{item.title}}
+                <image class="close-icon"
+                       src="./images/close.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="unselect-tags">
+        <view class="title">当前未选中新闻分类</view>
+        <view class="unselect-list">
+            <view class="tag-item"
+                  wx:for="{{unselectedTagList}}"
+                  wx:key="item.key"
+                  data-tag-index="{{index}}"
+                  bindtap="onAddTag">
+                {{item.title}}
+                <image class="add-icon"
+                       src="./images/add.png"></image>
+            </view>
+        </view>
+    </view>
+    <button type="primary"
+            size="mini"
+            class="save-btn"
+            bindtap="onSave">保存修改</button>
+    <view class="hh">1</view>
+</view>
